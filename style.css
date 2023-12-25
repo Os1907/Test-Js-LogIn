@@ -1,0 +1,211 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{ 
+    /* ==> Color */
+
+    background-color: #0b1121;
+    background-image: linear-gradient(160deg, #0b1121 46%, #b53241 100%);
+    
+     /* background-color: #0b1120; */
+     /* background-image: url(./image/hero-dark@90.dba36cdf.png); */
+    background-position: center center ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        background-image: url(./image/download.svg);
+        opacity: 0.3;
+        z-index: -11;
+    }
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+} 
+
+
+
+.hover-animation{
+    transition: all 0.8s !important;
+}
+.hover-animation:hover{
+    transform: scale(1.1);
+}
+input::placeholder{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    color:#637085!important;
+}
+input{
+    background-color:#1E293B !important;
+    background-color:#ffffff !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    color: #1E293B !important;
+}
+.main-color-bg{
+    background-color:#1E293B !important;
+
+}
+
+h1{
+   
+    color: rgb(255, 255, 255) !important;
+    font-weight: 900;
+    font-size: 50px !important;
+}
+
+.inputs p{
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif !important;
+    font-weight: 700;
+}
+
+
+.inpyts{
+    animation-name: sora2;
+    animation-duration:1s;
+    animation-iteration-count: 1;
+    transition: all 0.5s;
+
+}
+
+@keyframes sora2{
+
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-5px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+.form-control:focus {
+
+    box-shadow: 0 0 0 0.30rem#a4193e;
+}
+
+.text-danger2{
+    color: #a4193e;
+}
+
+
+.inputs button{
+    font-family: 'DM Sans', sans-serif;
+
+    font-weight: 700;
+}
+
+
+
+
+#message-disaple{
+    display: none;
+}
+#creatBtn{
+    text-transform: none;
+    font-weight: 25px !important;
+}
+
+.bg-gradient2{
+    margin-top: 25px !important;
+  
+}
+
+
+#message-disaple2{
+    display: none;
+}
+.display-none{
+    display: none;
+}
+.circle-red{
+    width: 10px;
+    height: 10px;
+    background-color:   #b53241;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: sale 1s ease-in infinite normal forwards;
+    display: inline-block;
+}
+
+
+@keyframes sale {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+.wrong-value{
+    color:  #b53241 !important;
+    border:  #b53241 2px solid;
+    padding: 5px 10px ;
+}
+
+
+@media (min-width: 410px) and (max-width: 1024px) {
+main{
+    margin-top: 200px !important;
+}
+body{ 
+     background-color: #0b1121;
+    background-image: linear-gradient(160deg, #0b1121 26%, #b53241 100%);
+    background-position: center center ;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        background-image: url(./image/download.svg);
+        opacity: 1;
+        z-index: -11;
+    }
+}
+}
+
+.my-btn {
+    background-color: #0b112100;
+    border: 0;
+    font-weight: 900 ;
+    color: rgb(0, 89, 255);
+    transition: all 0.3s;
+    &:hover{
+        color: rgb(21, 72, 168);
+    }
+}
